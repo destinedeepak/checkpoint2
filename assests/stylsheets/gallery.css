@@ -1,0 +1,194 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* custom style  */
+*,
+* ::before,
+* ::after{
+    box-sizing: border-box;
+}
+.clearfix::before, .clearfix::after{
+    content: "";
+    display: table;
+}
+.clearfix::after{
+    clear:both;
+}
+body{
+    font-family: sans-serif;
+    line-height: 1.2;
+    padding-bottom: 300px;
+    position: relative;
+}
+/* costume style */
+.container{
+    max-width: 85%;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* aside with header, article and foooter  */
+.aside{
+    flex: 0 1 25%;
+    background-color: #EA513E;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 25%;
+    height: 100%;
+
+}
+.header-article-nav{
+    flex-direction: column;
+    justify-content: space-between;
+}
+/* header  */
+.header{
+    width: 100%;
+    justify-content: space-between;
+    margin: 30px 0 0 0;
+    padding: 0 0 0 40px;
+}
+.brand{
+    height: 60px;
+    width: 60px;
+}
+.brand img{
+    width: 100%;
+    height: 100%;
+}
+.brand a{
+    font-size: 28px;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    margin-left: 5px;
+}   
+.header .home-btn{
+    text-decoration: none;
+    border: 1px solid white;
+    color: white;
+    font-size: 12px;
+    padding: 5px 6px;
+    border-radius: 3px;
+}
+.header-article-nav .article{
+    margin-top: 350px;
+    padding-right: 25px;
+}
+.article h2{
+    font-size: 22px;
+    color: white;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+.article p{
+    font-size: 12px;
+    color: rgb(48, 47, 47);
+    font-weight: 600;
+    line-height: 2;
+}
+.header-article-nav .nav{
+    justify-content:space-evenly;
+    align-self: flex-start;
+    margin: 40px 0;
+}
+.header-article-nav .nav a{
+    color: white;
+    border: 2px solid white;
+    border-radius: 50%;
+    padding: 6px 8px;
+    margin-right:16px ;
+}
+.header-article-nav .nav .facebook-padding{
+    padding: 6px 10px;
+}
+
+/* main */
+main{
+    flex: 0 1 75%;
+    width: 75%;
+    margin-left: 372px;
+}
+.gallery-container{
+    max-width: 97%;
+    margin: 0 auto;
+}
+h1{
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+    padding: 20px;
+}
+.gallery{
+    justify-content: space-around;
+}
+.gallery1{
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: -260px;
+}
+.gallery2{
+    flex-direction: column;
+    justify-content: flex-start;
+        
+}
+.gallery .image{
+    width: 510px;
+    margin-bottom: 30px;
+    border: 3px solid rgb(59, 59, 59);
+}
+
+.gallery .image img{
+    width: 100%;
+}   
